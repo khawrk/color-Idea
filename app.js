@@ -147,14 +147,33 @@ yellow
 yellowgreen`
 const colorInUse = colors.split("\n");
 
-const btn = document.getElementById('btn');
-const color = document.querySelector(".color")
+const btnBg = document.getElementById('btnBg');
+const color = document.querySelector(".bgcolor")
+const btnDiv = document.getElementById('btnDiv')
+const div = document.querySelector('.exampleDiv')
+const divText = document.querySelector('.divcolor')
+const btnText = document.getElementById('btntext')
+const textColor = document.querySelector('.textcolor')
+const footerText = document.querySelector('#khawrk')
 
-btn.addEventListener('click', function () {
+btnBg.addEventListener('click', function () {
     //get random number between 0-3 for color index
     const randomNumber = getRandomNumber();
     document.body.style.backgroundColor = colorInUse[randomNumber];
     color.textContent = colorInUse[randomNumber];
+})
+
+btnDiv.addEventListener('click', function () {
+    const randomNumber = getRandomNumber();
+    div.style.backgroundColor = colorInUse[randomNumber]
+    divText.textContent = colorInUse[randomNumber]
+})
+
+btnText.addEventListener('click', function () {
+    const randomNumber = getRandomNumber();
+    document.body.style.color = colorInUse[randomNumber]
+    textColor.textContent = colorInUse[randomNumber]
+    footerText.style.color = colorInUse[randomNumber]
 })
 
 function getRandomNumber() {

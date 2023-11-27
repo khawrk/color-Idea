@@ -7,41 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
     <link rel="stylesheet" href="style.css">
-    <title>Color Flipper!</title>
-
+    <title>Color Ideas</title>
+    <script src="https://kit.fontawesome.com/9684f61028.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Hello There! Welcome to Color Flipper!</h1>
-    </div>
-    <nav class="navbar" role="navigation">
-        <div class="container">
-            <h4>color flipper</h4>
-            <ul class="nav-links">
-                <li>
-                    <a href="index.html">Simple</a>
-                    <a href="hex.html">Hex</a>
-                </li>
-            </ul>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Welcome to Color Ideas 🎨 </h1>
+            <h2>The place to find perfect color pairs</h2>
         </div>
-    </nav>
+        <nav class="navbar">
+            <div class="colorTypeSelector">
+                <h3>Select Color Options</h3>
+                <ul class="nav-links">
+                    <li id="colorNames">
+                        <a href="index.html">140 Color Names</a>
+                    </li>
+                    <li>
+                        <a href="hex.html">Hex Colors</a>
+                    </li>
+                </ul>
+            </div>
 
-    <main>
-        <div class="container">
-            <h2>The color showing is: <span class="color">#beigh</span></h2>
-            <button id="btn" class="button is-light">Click me to change background color!</button>
-        </div>
-    </main>
+        </nav>
+
+        <main>
+            <div class="containerText">
+                <div class="containerBgColor">
+                    <h2>The background color showing is: <span class="bgcolor">beigh</span></h2>
+                    <button id="btnBg" class="button is-light">Click me to change background color!</button>
+                </div>
+                <div class="containerDivColor">
+                    <h2>The div color showing is: <span class="divcolor">white</span></h2>
+                    <button id="btnDiv" class="button is-light">Click me to change div color!</button>
+                </div>
+                <div class="containerTextColor">
+                    <h2>The text color showing is: <span class="textcolor">brown</span></h2>
+                    <button id="btntext" class="button is-light">Click me to change text color!</button>
+                </div>
+            </div>
+            <div class="exampleDiv">
+            </div>
+        </main>
+    </div>
     <footer>
         <div>
-            <p>made with ♥️ and  ☕ </p>
+            <p>made by <i class="fa-brands fa-github"></i><a href="https://github.com/khawrk" id="khawrk"> khawrk</a>
+                with ♥️ and ☕
+            </p>
         </div>
     </footer>
-
-
-
-
     <script src="app.js"></script>
 </body>
 
